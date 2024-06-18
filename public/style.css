@@ -1,0 +1,140 @@
+body {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: #eeeeee;
+}
+
+.home,
+.new-post,
+.posts {
+  position: relative;
+  max-width: 100%;
+  height: 70%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.container > img {
+  width: 100%;
+  height: 100%;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Merriweather", serif;
+  transform: translate(-50%, -50%);
+  color: #da8b8e;
+  font-weight: bold;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000000;
+  border-radius: 10px;
+}
+.container > h1 > span {
+  color: #95c6c0;
+}
+.posts > h1 {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: aliceblue;
+}
+.posts > img {
+  opacity: 0.8;
+}
+.view-blogs {
+  position: relative;
+  padding: 0;
+  padding-top: 50px;
+}
+.view-blogs > ul {
+  list-style: none;
+  text-align: left;
+}
+.view-blogs > .post {
+  padding-top: 50px;
+  width: 100%;
+}
+.view-blogs > .post > h2 {
+  position: absolute;
+}
+h3 {
+  font-size: 25px;
+  color: grey;
+}
+h4 {
+  font-size: 15px;
+}
+.post > span > a {
+  text-decoration: none;
+  color: red;
+}
+
+.form {
+  width: 50%;
+
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+.view-post {
+  text-decoration: none;
+  color: #373a40;
+}
+form > input[type="text"],
+form > textarea {
+  width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+form > input[type="submit"],
+.create > a > button {
+  height: 50px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: #373a40;
+  color: white;
+  margin-top: 50px;
+}
+.content {
+  text-align: justify;
+  font-size: 20px;
+  padding: 30px;
+  box-shadow: 2px 2px 4px #000000;
+  margin: 20px 40px;
+}
+form > input[type="submit"]:hover,
+.create > a > button:hover {
+  color: #373a40;
+  background-color: white;
+  border: 2px solid #373a40;
+}
+
+form > label {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .form {
+    width: 80%;
+  }
+
+  form > label {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    width: 95%;
+  }
+
+  form > label {
+    font-size: 18px;
+  }
+}

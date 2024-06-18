@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+<div class="container posts">
+  <img class="back-img" src="<%= data.image %>" alt="" />
+  <h1 class="centered"><%= data.title %></h1>
+</div>
+<div class="content">
+  <h3><%= data.subtitle %></h3>
+  <p><%- data.body %></p>
+  <h4><em>Posted by <%= data.author %> on <%= data.date %></em></h4>
+</div>
+<div class="create">
+  <a href="/edit-post?id=<%= id %>">
+    <button type="button" class="btn btn-outline-light">Edit Post</button></a
+  >
+</div>
+
+<%- include("partials/footer.ejs") %>

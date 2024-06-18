@@ -1,0 +1,46 @@
+<%- include("partials/header.ejs") %>
+<div class="container new-post">
+  <img class="back-img" src="/images/new_post.jpg" alt="" />
+  <h1 class="centered"><span>New</span> Post</h1>
+</div>
+<div class="container form">
+  <form action="/submit" method="post">
+    <label for="title">Blog Title:</label><br />
+    <input
+      type="text"
+      name="title"
+      id="title"
+      size="50px"
+      value="A Journey Through Passions: How Life Led Me to Storytelling"
+    /><br />
+    <label for="subtitle">Blog Subtitle:</label><br />
+    <input
+      type="text"
+      name="subtitle"
+      id="subtitle"
+      size="50px"
+      value="As a kid, what I wanted to be kept changing. If you can think of a career, I probably aspired to it at some point."
+    /><br />
+    <label for="author">Blog Author:</label><br />
+    <input
+      type="text"
+      name="author"
+      id="author"
+      size="50px"
+      value="Secretor"
+    /><br />
+    <label for="subtitle">Blog Image:</label><br />
+    <input
+      type="text"
+      name="image"
+      id="image"
+      size="50px"
+      value="https://images.pexels.com/photos/25976674/pexels-photo-25976674/free-photo-of-the-sun-shines-through-trees-and-grass-in-a-park.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    /><br />
+    <label for="body">Blog Body</label><br />
+    <textarea name="body" id="editor1" cols="60" rows="10"></textarea>
+    <input type="submit" value="Create Post" />
+  </form>
+</div>
+
+<%- include("partials/footer.ejs") %>
